@@ -1,1 +1,1 @@
-# tmux-paste-enhanced
+# tmux-paste-popup
