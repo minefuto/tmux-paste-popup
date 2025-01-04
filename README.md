@@ -1,6 +1,7 @@
 # tmux-paste-popup
 
 A tmux plugin to provide a popup for easy pasting.
+![tmux-paste-popup](/images/tmux-paste-popup.png)
 
 ## Requirements
 
@@ -38,10 +39,8 @@ tmux source-file ~/.tmux.conf
 
 ## Usage
 
-To use the `tmux-paste-popup` plugin, simply press the `prefix + ]`(default) to open the popup window.
+To use the `tmux-paste-popup` plugin, simply press the `prefix + ]`(default) to open the popup window.  
 Then, you can execute the following operations.
-
-To use the `tmux-paste-popup` plugin, simply press the `prefix + ]`(default).
 
 | Key     | Action                       |
 | ------- | ---------------------------- |
