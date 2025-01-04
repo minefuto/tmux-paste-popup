@@ -45,6 +45,9 @@ function wait_key() {
     redraw
     read -n1 key
     if [[ ${key} = "" ]]; then
+      if [ ${buffer_max_numbers} -eq 0 ]; then
+        exit 0
+      fi
       tmux paste-buffer -b ${buffer_name}
       exit 0
     elif [ ${key} = "q" ]; then
@@ -92,7 +95,7 @@ function main() {
   printf "\033[?7l"
   stty -echo
   trap "redraw" SIGWINCH
-  trap "exit 0" 2
+  trap "exit 0" SIGINT
 
   wait_key
 }
